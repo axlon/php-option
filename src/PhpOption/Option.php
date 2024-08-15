@@ -115,8 +115,8 @@ abstract class Option implements IteratorAggregate
      *
      * @template S
      *
-     * @param Option<S>|callable|S $value
-     * @param S                    $noneValue Used when $value is mixed or
+     * @param Option<S>|(callable(): S)|S $value
+     * @param mixed                $noneValue Used when $value is mixed or
      *                                        callable, for None-check.
      *
      * @return Option<S>|LazyOption<S>
